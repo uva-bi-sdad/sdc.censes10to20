@@ -13,3 +13,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://uva-bi-sdad.github.io/sdc.censes10to20/
