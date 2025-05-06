@@ -51,8 +51,14 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="sdccenses10to20">sdc.censes10to20<a class="anchor" aria-label="anchor" href="#sdccenses10to20"></a>
+<div class="page-header"><h1 id="census-2010-to-2020-geographies">Census 2010 to 2020 Geographies<a class="anchor" aria-label="anchor" href="#census-2010-to-2020-geographies"></a>
 </h1></div>
+<p>Takes in a finalized tract dataset and standardizes the values to fit 2020 tract boundaries. assumes that the dataset fits the data commons conventions for finalized data (columns: geoid, year, measure, value, moe, region_type || measure names: snake case - underscore delimeter) param: data(dataframe) -&gt; tract data fitting data commons conventions (outlined above) param: filter_geo(character - default=“state”) -&gt; geographic level to keep consistent with original data. (for example, if your original data only contains specific states like Virginia, use “state”. if your original data only contains specific counties like Fairfax and Arlington, use “county”) return: same dataframe with values standardized to 2020 boundaries</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>remotes::install_github(“<a href="https://github.com/uva-bi-sdad/sdc.census10to20" class="external-link uri">https://github.com/uva-bi-sdad/sdc.census10to20</a>”)</p>
+</div>
 </div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
